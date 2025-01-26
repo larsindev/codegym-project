@@ -18,11 +18,9 @@ public class Solution {
             numbers[i] = Integer.parseInt(reader.readLine());
         }
 
-        for (int i = 0; i < numbers.length; i++) {
-            if (i < 10)
-                numbers2[i] = numbers[i];
-            else
-                numbers3[i - 10] = numbers[i];
+        for (int i = 0; i < 10; i++) {
+            numbers2[i] = numbers[i];
+            numbers3[i] = numbers[i + 10];
         }
 
         for (int number : numbers3) { System.out.println(number); }

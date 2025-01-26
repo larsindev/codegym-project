@@ -12,7 +12,7 @@ public class Cat {
     }
 
     public static void main(String[] args) {
-        Cat.setCatCount(3);
-        System.out.println(Cat.catCount);
+        setCatCount(3);
+        System.out.println(catCount);
     }
 }
