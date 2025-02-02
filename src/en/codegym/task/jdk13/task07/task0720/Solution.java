@@ -24,15 +24,13 @@ public class Solution {
             strings.add(userInput);
         }
 
-        ArrayList<String> stringsCopy = new ArrayList<>(strings);
-
         for (int i = 0; i < m; i++) {
-            String temp = strings.get(i);
-            stringsCopy.add(temp);
-            stringsCopy.remove(0);
+            String removal = strings.get(0);
+            strings.add(removal);
+            strings.remove(0);
         }
 
-        for (String str : stringsCopy) {
+        for (String str : strings) {
             System.out.println(str);
         }
     }
